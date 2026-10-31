@@ -1,0 +1,39 @@
+{
+  "extends": "@repo/typescript-config/nextjs.json",
+  "compilerOptions": {
+    "declaration": false,
+    "declarationMap": true,
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "strictNullChecks": true,
+    "types": ["node"]
+  },
+  "exclude": [
+    "node_modules",
+    "sdk",
+    "storybook-static",
+    ".storybook",
+    "**/__tests__/**",
+    "**/__e2e__/**",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "**/*.clienttest.*",
+    "**/*.servertest.*",
+    "**/*.story.*",
+    "**/*.stories.*",
+    "vitest.config.mts",
+    "playwright.config.ts"
+  ],
+  "include": [
+    "**/*.cjs",
+    "**/*.mjs",
+    "**/*.ts",
+    "**/*.tsx",
+    ".eslintrc.js",
+    ".next/types/**/*.ts",
+    "next-env.d.ts",
+    "src",
+    "types/**/*.d.ts"
+  ]
+}
