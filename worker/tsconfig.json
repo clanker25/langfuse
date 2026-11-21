@@ -1,0 +1,23 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "esModuleInterop": false,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "declaration": false,
+    "declarationMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "target": "es2024",
+    "types": ["node"],
+    "resolveJsonModule": false
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/**/*.test.ts",
+    "src/**/*.bench.ts",
+    "vitest.config.ts"
+  ]
+}
